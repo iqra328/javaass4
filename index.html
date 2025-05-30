@@ -2,79 +2,336 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-                     <!-- VARIABLE NAMES: LEGAL & ILLEGAL -->
+                                <!-- Assignment # 5
+                                     JAVASCRIPT -->
 
-       <!-- Question 1   -->
-        <!-- 1. Declare 3 variables in one statement? -->
-        var name = "Ali", age = 25, city = "Lahore";
+              <!-- question 1                        -->
+    <!-- 1. Write a program that take two numbers & add them in a
+new variable. Show the result in your browser. -->
+
+<script>
+   num1 = 3;
+   num2 = 5;
+   sum = num1 + num2;
+
+  document.write("Sum of " + num1 + " and " + num2 + " is " + sum);
+</script>
+                    <br> 
+                      <!-- question 2     -->
+  <!-- 2. Repeat task1 for subtraction, multiplication, division &
+modulus. -->
+<script>
+  difference = num1 - num2;
+   product = num1 * num2;
+  quotient = num1 / num2;
+
+document.write("Subtraction of " + num1 + " and " + num2 + " is " + difference + "<br>");
+  document.write("Multiplication of " + num1 + " and " + num2 + " is " + product + "<br>");
+  document.write("Division of " + num1 + " by " + num2 + " is " + quotient )
+  </script>
+
+<br>
+<script>
+  // a. Declare a variable
+  var  num;
+
+  // b. Show the value of variable in browser
+  document.write("Value after variable declaration is: " + num + "<br>");
+
+  // c. Initialize the variable
+  num = 5;
+
+  // d. Show initial value
+  document.write("Initial value: " + num + "<br>");
+
+  // e. Increment the variable
+  num++;
+
+  // f. Show value after increment
+  document.write("Value after increment is: " + num + "<br>");
+
+  // g. Add 7 to the variable
+  num += 7;
+
+  // h. Show value after addition
+  document.write("Value after addition is: " + num + "<br>");
+
+  // i. Decrement the variable
+  num--;
+
+  // j. Show value after decrement
+  document.write("Value after decrement is: " + num + "<br>");
+
+  // k. Show the remainder after dividing by 3
+  let remainder = num % 3;
+
+  // l. Output the remainder
+  document.write("The remainder is: " + remainder);
+</script>
+
+<br>
+<script>
+    ticketprice = 600;
+    totalcost = ticketprice * 5;
+    document.write("Cost of 5 movie tickets is " + totalcost + " PKR");
+</script>
+
+
+<br>
+                      <!-- question 5   
+ 5. Write a script to display multiplication table of any
+number in your browser. E.g -->
+
+
+<h2> Table of 4</h2>
+
+<script>
+  let number = 4; 
+
+  for (let i = 1; i <= 10; i++) {
+    document.write(number + " x " + i + " = " + (number * i) + "<br>");
+  }
+</script>
+                     <!-- question 6 -->
+
+
+<!-- 6. The Temperature Converter: It’s hot out! Let’s make a
+converter based on the steps here.
+a. Store a Celsius temperature into a variable.
+b. Convert it to Fahrenheit & output “NNoC is NNoF”.
+c. Now store a Fahrenheit temperature into a variable.
+d. Convert it to Celsius & output “NNoF is NNoC”. -->
+
+<script>
+  // a. Store a Celsius temperature
+  let celsius = 25;
+
+  // b. Convert to Fahrenheit
+  let fahrenheitResult = (celsius * 9/5) + 32;
+
+  // Output the result
+  document.write(celsius + "°C is " + fahrenheitResult + "°F<br>");
+
+  // c. Store a Fahrenheit temperature
+  let fahrenheit = 70;
+
+  // d. Convert to Celsius
+  let celsiusResult = (fahrenheit - 32) * 5/9;
+
+  // Output the result
+  document.write(fahrenheit + "°F is " + celsiusResult + "°C");
+</script>
+
+<!-- 7. Write a program to implement checkout process of a
+shopping cart system for an e-commerce website. Store
+the following in variables
+
+MATH EXPRESSIONS | JAVASCRIPT
+
+Page 5 of 9
+
+a. Price of item 1
+b. Price of item 2
+c. Ordered quantity of item 1
+d. Ordered Quantity of item 2
+e. Shipping charges
+
+Compute the total cost & show the receipt in your browser -->
+ 
+
+<script>
+  // a. Price of item 1
+   priceItem1 = 650;
+
+  // b. Price of item 2
+  priceItem2 = 100;
+
+  // c. Ordered quantity of item 1
+  quantityItem1 = 3;
+
+  // d. Ordered quantity of item 2
+  quantityItem2 = 7;
+
+  // e. Shipping charges
+   shippingCharges = 100;
+
+  // Calculate total cost
+  let totalCost = (priceItem1 * quantityItem1) + (priceItem2 * quantityItem2) + shippingCharges;
+
+  // Display receipt
+  document.write("Price of item 1 is " + priceItem1 + " PKR<br>");
+  document.write("Quantity of item 1 is " + quantityItem1 + "<br><br>");
+
+  document.write("Price of item 2 is " + priceItem2 + " PKR<br>");
+  document.write("Quantity of item 2 is " + quantityItem2 + "<br><br>");
+
+  document.write("Shipping Charges: " + shippingCharges + " PKR<br><br>");
+
+  document.write("<strong>Total cost of your order is: " + totalCost + " PKR</strong>");
+</script>
+
+
+<!-- 8. Store total marks & marks obtained by a student in 2
+variables. Compute the percentage & show the result in
+your browser -->
+
+<br>
+<script>
+  // Store total marks and marks obtained
+   totalMarks = 500;
+   marksObtained = 420;
+
+  // Compute percentage
+   percentage = (marksObtained / totalMarks) * 100;
+
+  // Show the result
+  document.write("Total Marks: " + totalMarks + "<br>");
+  document.write("Marks Obtained: " + marksObtained + "<br>");
+  document.write("Percentage: " + percentage + "%");
+</script>
+
 
 <br>
 
-                 <!-- Question 2   -->
-        <!-- 2. Declare 5 legal & 5 illegal variable names. -->
+<!-- 9. Assume we have 10 US dollars & 25 Saudi Riyals. Write a
+script to convert the total currency to Pakistani Rupees.
+Perform all calculations in a single expression.
+(Exchange rates : 1 US Dollar = 104.80 Pakistani Rupee
+and 1 Saudi Riyal = 28 Pakistani Rupees -->
+<h2>Currency Conversion to PKR</h2>
 
-✅ Legal variable names:
+<script>
+  // Perform calculation in a single expression
+  let totalPKR = (10 * 104.80) + (25 * 28);
 
-     userName;
-     $price;
-      _value;
-      totalAmount;
-      number1;
-
-    <br>
- 5 Illegal Variable Names:
-
- let 1number;     
-let var;         
-let user-name;    
-let full name;    
-let @price; 
-                        
-                      
-                 <!-- Question 3   -->
-
-
-<!-- 3. Display this in your browser
-a) A heading stating “Rules for naming JS variables”
-b) Variable names can only contain ______, ______,
-______ and ______.
-For example $my_1stVariable
-c) Variables must begin with a ______, ______ or
-_____. For example $name, _name or name
-d) Variable names are case _________
-e) Variable names should not be JS _________
- -->
-
-    <h2>Rules for naming JS variables</h2>
+  // Show result
+  document.write("Total Currency in PKR: " + totalPKR);
+</script>
 
 
 
-  <p>  Variable names can only contain <strong>letters</strong>, <strong>numbers</strong>, <strong>underscores (_)</strong>, and <strong>dollar signs ($)</strong>.<br>
-   </p>
+
+<br>
+<!-- 10. Write a program to initialize a variable with some
+number and do arithmetic in following sequence:
+a. Add 5
+b. Multiply by 10
+c. Divide the result by 2
+Perform all calculations in a single expression -->
+<script>
+ 
+ result = ((10 + 5) * 10) / 2; 
+
+  
+  document.write("Result of the expression is: " + result);
+</script>
+
+<!-- 11. The Age Calculator: Forgot how old someone is?
+Calculate it!
+a. Store the current year in a variable.
+b. Store their birth year in a variable.
+c. Calculate their 2 possible ages based on the stored
+values.
+
+Output them to the screen like so: “They are either NN or NN
+years old”. -->
 
 
-  Variables must begin with a <strong>letter</strong>, <strong>underscore (_)</strong>, or <strong>dollar sign ($)</strong>. <br>
-    For example: <code>$name</code>, <code>_name</code>, or <code>name</code>
+<h2>Age Calculator</h2>
+
+<script>
+ 
+  currentYear = 2016;
 
 
-  <p>
-    Variable names are case <strong>sensitive</strong>
-  </p>
+   birthYear = 1992;
+
+  let age1 = currentYear - birthYear;
+  let age2 = age1 - 1;
+
+  //  result
+ 
+  document.write("They are either " + age2 + " or " + age1 + " years old.");
+</script>
+
+<!-- 
+ 12. The Geometrizer: Calculate properties of a circle.
+a. Store a radius into a variable.
+
+MATH EXPRESSIONS | JAVASCRIPT
+
+Page 8 of 9
+b. Calculate the circumference based on the radius, and
+output “The circumference is NN”.
+(Hint : Circumference of a circle = 2 π r , π = 3.142)
+Calculate the area based on the radius, and output “The
+area is NN”. (Hint : Area of a circle = π r2, π = 3.142) -->
+ <br>
+ 
+ <script>
+  // a. Store radius
+  let radius = 20;
+
+  // π value
+  let pi = 3.142;
+
+  // b. circumference
+  let circumference = 2 * pi * radius;
+
+  // c.  area
+  let area = pi * radius * radius;
+
+  //  results
+  document.write("Radius of the circle is: " + radius + "<br>");
+  document.write("The circumference is: " + circumference + "<br>");
+  document.write("The area is: " + area);
+</script>
 
 
-  <p>
-    Variable names should not be JS <strong>keywords</strong>
-  </p>
+<!-- //  13. The Lifetime Supply Calculator: Ever wonder how
+//  much a “lifetime supply” of your favorite snack is?
+//  Wonder no more.
+//   a. Store your favorite snack into a variable
+//  b. Store your current age into a variable.
+// c. Store a maximum age into a variable.
+//  d. Store an estimated amount per day (as a number).
+//  e. Calculate how many would you eat total for the rest of
+//  your life.
+// Output the result to the screen like so: “You will need
+//  NNNN to last you until the ripe old age of NN”.   -->
+
+<script>
+favoriteSnack = "chocolate chip cookies";
+
+currentAge = 15;
+
+maxAge = 65;
+
+amountOfSnackPerDay = 3;
+
+console.log(`You will need 150 chocolates to last you until the ripe old age of ${maxAge}`) 
 
 
 
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
 
     <script src="/app.js"></script>
-
-                             <!-- -- END -- -->
-</body>
 </html>
